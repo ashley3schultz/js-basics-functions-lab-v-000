@@ -19,6 +19,9 @@ function calculatesFarePrice(start, finish) {
     fare = 'cannot travel that far'
   } else if (feet > 2000) {
     fare = 25
-  } 
-    fare = 0.02 * feet
+  }
+    else if (fare > 400) {
+      fare = (0.02 * feet)
+  }
+  return fare
 }
