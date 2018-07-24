@@ -12,8 +12,8 @@ function distanceTravelledInFeet(start, finish) {
 }
 
 function calculatesFarePrice(start, finish) {
-  const feet = distanceTravelledInFeet(start, finish)
-  if (feet < 400) {
+  const feet = distanceTravelledInFeet(start, finish) - 400
+  if (feet < 0) {
     fare = 0
   } else if (feet > 2500) {
     fare = 'cannot travel that far'
