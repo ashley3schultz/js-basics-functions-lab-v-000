@@ -10,3 +10,13 @@ function distanceFromHqInFeet(st) {
 function distanceTravelledInFeet(start, finish) {
   return start < finish ? (finish - start) * 264 : (start - finish) * 264
 }
+
+function calculatesFarePrice(start, finish) {
+  const feet = distanceTravelledInFeet(start, finish)
+  if feet < 400 {
+    let fare = 0
+  } else if feet > 2500 {
+    let fare = 'cannot travel that far'
+  }
+  
+}
