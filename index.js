@@ -6,3 +6,7 @@ function distanceFromHqInBlocks(st) {
 function distanceFromHqInFeet(st) {
   return distanceFromHqInBlocks(st) * 264
 }
+
+function distanceTravelledInFeet(start, finnish) {
+  return start < finnish ? finnish - start : start - finnish
+}
