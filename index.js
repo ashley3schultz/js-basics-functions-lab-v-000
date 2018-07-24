@@ -8,5 +8,5 @@ function distanceFromHqInFeet(st) {
 }
 
 function distanceTravelledInFeet(start, finnish) {
-  return start < finnish ? finnish - start : start - finnish
+  return start < finnish ? finnish - start * 264 : start - finnish * 264
 }
