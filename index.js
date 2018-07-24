@@ -7,6 +7,6 @@ function distanceFromHqInFeet(st) {
   return distanceFromHqInBlocks(st) * 264
 }
 
-function distanceTravelledInFeet(start, finnish) {
-  return start < finnish ? finnish - start * 264 : start - finnish * 264
+function distanceTravelledInFeet(start, finish) {
+  return start < finish ? (finish - start) * 264 : (start - finish) * 264
 }
