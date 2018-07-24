@@ -20,8 +20,8 @@ function calculatesFarePrice(start, finish) {
   } else if (feet > 2000) {
     fare = 25
   } else if (fare > 400) {
-    distance = feet - 400
-    fare = (0.02 * distance)
+    paidFt = feet - 400
+    fare = (0.02 * paidFt)
   }
-  return (0.02 * distance)
+  return fare
 }
