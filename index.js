@@ -23,5 +23,5 @@ function calculatesFarePrice(start, finish) {
     distance = feet - 400
     fare = (0.02 * distance)
   }
-  return fare
+  return (0.02 * distance)
 }
